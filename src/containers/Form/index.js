@@ -19,7 +19,7 @@ const Form = ({ onSuccess, onError }) => {
       try {
         await mockContactApi();
         setSending(false);
-        // j'ajoute la fonction onSuccess qui n'était pas déclaré
+        // j'ajoute la fonction onSuccess qui n'était pas appelé
         onSuccess();
       } catch (err) {
         setSending(false);
